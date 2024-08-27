@@ -45,6 +45,11 @@ public class BranchService implements IBranchService {
     }
 
     @Override
+    public EntityResult branchQuery(Map<String, Object> keysValues, List<String> attributes, List<?> sort) throws OntimizeJEERuntimeException {
+        return this.daoHelper.query(this.branchDao, keysValues, attributes, sort);
+    }
+    
+    @Override
     public AdvancedEntityResult branchPaginationQuery(Map<?, ?> keysValues, List<?> attributes, int recordNumber, int startIndex, List<?> orderBy)
             throws OntimizeJEERuntimeException {
         return this.daoHelper.paginationQuery(this.branchDao, keysValues, attributes, recordNumber, startIndex, orderBy);

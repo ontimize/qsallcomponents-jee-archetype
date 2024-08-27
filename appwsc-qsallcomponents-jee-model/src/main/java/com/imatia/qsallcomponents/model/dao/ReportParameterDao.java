@@ -11,11 +11,11 @@ import org.springframework.stereotype.Repository;
 @ConfigurationFile(configurationFile = "base-dao/ReportParameterDao.xml", configurationFilePlaceholder = "base-dao/placeholders.properties")
 public class ReportParameterDao extends OntimizeJdbcDaoSupport implements IReportParameterDao {
 	
-	public static final String	ATTR_ID						= "ID";
-	public static final String	ATTR_REPORT_ID				= "REPORT_ID";
-	public static final String	ATTR_NAME					= "NAME";
-	public static final String	ATTR_DESCRIPTION			= "DESCRIPTION";
-	public static final String	ATTR_NESTED_TYPE			= "NESTED_TYPE";
-	public static final String	ATTR_VALUE_CLASS			= "VALUE_CLASS";
+	public static final String	ATTR_ID						= "REPORTPARAMETERID";
+	public static final String	ATTR_REPORT_ID				= "REPORTID";
+	public static final String	ATTR_NAME					= "REPORTPARAMETERNAME";
+	public static final String	ATTR_DESCRIPTION			= "REPORTPARAMETERDESCRIPTION";
+	public static final String	ATTR_NESTED_TYPE			= "REPORTPARAMETERNESTEDTYPE";
+	public static final String	ATTR_VALUE_CLASS			= "REPORTPARAMETERVALUECLASS";
 
 }

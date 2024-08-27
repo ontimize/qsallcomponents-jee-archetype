@@ -4,10 +4,10 @@
 	xsi:schemaLocation="http://www.ontimize.com/schema/jdbc http://www.ontimize.com/schema/jdbc/ontimize-jdbc-dao.xsd"
 	table="REPORTS" datasource="mainDataSource" sqlhandler="dbSQLStatementHandler">
 	<DeleteKeys>
-		<Column>ID</Column>
+		<Column>REPORTID</Column>
 	</DeleteKeys>
 	<UpdateKeys>
-		<Column>ID</Column>
+		<Column>REPORTID</Column>
 	</UpdateKeys>
-	<GeneratedKey>ID</GeneratedKey>
+	<GeneratedKey>REPORTID</GeneratedKey>
 </JdbcEntitySetup>

@@ -8,6 +8,7 @@ import java.util.Map;
 import org.springframework.stereotype.Service;
 
 import com.ontimize.jee.common.naming.DMSNaming;
+import com.ontimize.jee.server.dao.common.INameConvention;
 import com.ontimize.jee.server.dms.model.OFile;
 import com.ontimize.jee.server.dms.rest.IDMSNameConverter;
 
@@ -60,6 +61,12 @@ public class DMSNameConverter implements IDMSNameConverter {
 	@Override
 	public List<?> getCategoryColumns(List<?> columns) {
 		return Arrays.asList(DMSNaming.CATEGORY_ID_CATEGORY, DMSNaming.CATEGORY_CATEGORY_NAME, DMSNaming.CATEGORY_ID_CATEGORY_PARENT);
+	}
+
+	@Override
+	public INameConvention getNameConvention() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
